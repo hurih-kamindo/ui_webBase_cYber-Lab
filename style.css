@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url("./assets/geometry-geometric-web-dark-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 header {
@@ -8,9 +19,6 @@ header {
     height: 8vh;
 }
 
-body {
- 
-}
 
 nav {
     display: flex;
@@ -32,7 +40,7 @@ header h5 {
 }
 
 h1 {
-    padding: 28px 0  10px 30px;
+    padding: 28px 20px  10px 30px;
     font-size: 3rem;
     font-weight: bolder;
     color: rgb(255, 255, 255);
@@ -41,21 +49,27 @@ h1 {
     /* -webkit-text-stroke: 2px rgb(160, 36, 36); */
 }
 
+h1:hover {
+    padding: 28px 20px  10px 30px;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 4px rgb(180, 99, 99);
+    -webkit-text-fill-color: #ffff;
+    /* -webkit-text-stroke: 2px rgb(160, 36, 36); */
+}
+
 .box {
-    background-image: url("./assets/geometry-geometric-web-dark-wallpaper-preview.jpg");
     display: flex;
-    width: 100vw;
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
     align-items: center;
     justify-content: center;
 }
 
 .ethical {
-    padding: 20px;
-    margin: 30px;
+    padding: 20px 20px 0 20px;
+    margin: 30px 30px 30px 0px;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 10px;
     width: 20%;
@@ -64,10 +78,41 @@ h1 {
 
 .ethical:hover {
     padding: 20px;
-    margin: 30px;
-    border: 3px solid rgb(138, 6, 6);
+    margin-top: 30px;
+    border: 3px solid rgb(14, 28, 155);
     border-radius: 10px;
     width: 20%;
     height: 30%;
     background: #181f20;
+    cursor: pointer;
+}
+
+h6 {
+    color: #ffff;
+    font-size: 1.1em;
+}
+
+.tools {
+    flex-direction: column;
+    color: #ffff;
+    font-size: large;
+}
+
+.tools-add a{
+    font-size : 1.4em;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.tools-add a:hover{
+    font-size : 1.4em;
+    text-decoration: none;
+    color:rgb(19, 0, 194);
+    padding-left: 30px;
+    padding-top: 0;
+    margin-top: 0;
+    cursor: pointer;
 }
