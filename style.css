@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&display=swap');
+@font-face {
+    font-family: "consola";
+    src: url('/assets/fonts/CONSOLA.TTF');
+}
 
 * {
     padding: 0;
@@ -6,12 +9,13 @@
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "consola";
     background-image: url("./assets/geometry-geometric-web-dark-wallpaper-preview.jpg");
     background-size: cover;
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 header {
@@ -19,11 +23,11 @@ header {
     height: 8vh;
 }
 
-
 nav {
     display: flex;
     padding-left: 50px ;
     flex-direction: row;
+    align-items: center;
 
 }
 
@@ -36,14 +40,21 @@ header h5 {
     font-size: 1.8rem;
     width: 30px;
     color: #ffff;
- 
+}
+
+.icons-top {
+    width: 90px;
+    margin-top: 6px;
+
 }
 
 h1 {
+    font-family: "consola";
     padding: 28px 20px  10px 30px;
     font-size: 3rem;
+    cursor: pointer;
     font-weight: bolder;
-    color: rgb(255, 255, 255);
+    color: antiquewhite;
    /*  text-shadow: 1px 2px 4px rgb(255, 255, 255); */
     -webkit-text-fill-color: #ffff;
     /* -webkit-text-stroke: 2px rgb(160, 36, 36); */
@@ -68,12 +79,13 @@ h1:hover {
 }
 
 .ethical {
-    padding: 20px 20px 0 20px;
+    padding: 20px;
     margin: 30px 30px 30px 0px;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 10px;
     width: 20%;
     height: 30%;
+    background: rgba(255, 255, 255, 0.527);
 }
 
 .ethical:hover {
@@ -83,36 +95,63 @@ h1:hover {
     border-radius: 10px;
     width: 20%;
     height: 30%;
-    background: #181f20;
+    background: #7683ca85;
     cursor: pointer;
 }
 
 h6 {
-    color: #ffff;
+    color: antiquewhite;
     font-size: 1.1em;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.tools {
-    flex-direction: column;
-    color: #ffff;
-    font-size: large;
-}
 
 .tools-add a{
     font-size : 1.4em;
     text-decoration: none;
-    color:rgb(255, 255, 255);
-    padding-left: 30px;
+    margin-left: 30px;
     padding-top: 0;
     margin-top: 0;
+    color: antiquewhite;
 }
 
 .tools-add a:hover{
     font-size : 1.4em;
     text-decoration: none;
-    color:rgb(19, 0, 194);
-    padding-left: 30px;
+    margin-left: 30px;
     padding-top: 0;
     margin-top: 0;
-    cursor: pointer;
+    color: rgb(35, 21, 160);
 }
+
+
+.cyberlab-img {
+    width: 55%;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.cyberlab-mal {
+    width: 42%;
+}
+
+/* button {
+    padding: 10px 20px;
+    margin-left: 38px;
+    background: transparent;
+    border:2px solid whitesmoke; 
+    border-radius: 9px;
+    color: #181f20
+}
+
+button:hover {
+    padding: 10px 20px;
+    margin-left: 38px;
+    background: #ffff;
+    color: rgb(7, 7, 143);
+    border:2px solid rgba(0, 55, 235, 0.918); 
+    border-radius: 9px;
+} */
